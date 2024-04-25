@@ -12,7 +12,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GoogleSearchTest {
 	
 	String chromeDriverResource = "./src/test/resources/chromeDriver/chromedriver.exe";
-	
 	private WebDriver driver;
 	
 	@Before
@@ -40,17 +39,15 @@ public class GoogleSearchTest {
 		
 		//asignamos un tiempo para la validacion de que la busqueda se completo
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+	
 		//checamos que el resultado de la busqueda sea lo que buscamos
 		assertEquals("Cigarettes after sex Touch Lyrics", driver.getTitle());
 	}
-	/*
 	@After
 	
 	 public void tearDown() {
 		driver.quit();
 	}
-	 * 
-	 * */
+	
 	
 }
