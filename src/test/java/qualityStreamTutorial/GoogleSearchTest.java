@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleSearchTest {
 	
-	String chromeDriverResource = "./src/test/resources/chromeDriver/chromedriver.exe";
+	String chromeDriverResource = "./src/test/resources/chromeDriver/chromedriver(v124).exe";
 	private WebDriver driver;
 	
 	@Before
@@ -46,7 +46,7 @@ public class GoogleSearchTest {
 	@After
 	
 	 public void tearDown() {
-		driver.quit();
+		
 	}
 	
 	

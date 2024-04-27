@@ -1,0 +1,47 @@
+#Selenium WebDriver Localizadores | CssSelector, Xpath, Id, LinkText, más
+
+
+##Localizadores
+
+1. By.id("string") -> Identifica de forma unica el elemento html
+	By locator = By.id("id_elemento");
+	
+2. By.id("String")  -> Que el elemento carezca de un id y se complicado de predecir
+	By locator_name = By.name("Name_element");
+	
+3. By.className("class") -> Bueno para buscar conjunto de elementos ya que selecciona las clases
+	By locator_className = By.ClassName("Clase_element");
+	
+4. By.tagName("tag") -> Busca el elemento con el tagname asignado
+	By locator_tagName = By.tagName("tag");
+	
+5. By.linkText("String") -> Busca los links en la pagina donde el texto coincida con el parametro
+	By locator_text = By.linkText("texto_link");
+	
+6. By.partialLinkText("String") -> Recibe un string busca links en la pagina donde el texto coincida parcialmente
+	By locator_partialLinkText = By.partialLinkText("parcial_text");
+	
+7. By.cssSelector("String") -> Localziar mediante selectores CSS
+	By locator_css = By.cssSelector("input[name='css']");
+	
+8. By.xpath("String") -> Permite recorrer y procesar los elementos de HTML
+	By locator_xpath = By.xpath("//input[@name='q']");
+	
+Plus con JS
+
+JavascriptExecutor
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
